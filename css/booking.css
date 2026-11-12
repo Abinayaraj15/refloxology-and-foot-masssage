@@ -1,0 +1,1136 @@
+/**
+ * Reflexology & Foot Massage Studio - Interactive Booking & Confirmation Styles
+ */
+
+/* ==========================================================================
+   Booking Page Hero & Section Spacing
+   ========================================================================== */
+.page-header-banner.page-header-booking {
+  padding: 2.5rem 0 2rem;
+  min-height: auto;
+  text-align: center;
+}
+.page-header-banner.page-header-booking .breadcrumb-wellness {
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+.page-header-banner.page-header-booking .section-tag {
+  margin-bottom: 0.35rem;
+}
+.page-header-banner.page-header-booking h1 {
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  margin-bottom: 0.35rem;
+}
+.page-header-banner.page-header-booking p {
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.booking-page-section {
+  padding-top: 1.75rem !important;
+  padding-bottom: 3.5rem !important;
+}
+
+/* ==========================================================================
+   Multi-Step Booking Stepper
+   ========================================================================== */
+.booking-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  position: relative;
+  scroll-margin-top: calc(var(--header-height) + 1.25rem);
+}
+.booking-stepper::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 30px;
+  right: 30px;
+  height: 2px;
+  background-color: var(--border-color);
+  z-index: 1;
+}
+
+.stepper-step {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-body);
+  padding: 0 0.5rem;
+}
+.stepper-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  border: 2px solid var(--border-color);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all var(--transition-normal);
+}
+.stepper-title {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+  transition: color var(--transition-fast);
+}
+
+.stepper-step.active .stepper-circle {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 0 0 4px var(--color-primary-soft);
+}
+.stepper-step.active .stepper-title {
+  color: var(--color-primary);
+}
+
+.stepper-step.completed .stepper-circle {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Booking Layout Grid & Main Container
+   ========================================================================== */
+.booking-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+@media (min-width: 992px) {
+  .booking-layout-grid {
+    grid-template-columns: minmax(0, 1.8fr) minmax(0, 1.2fr);
+    align-items: start;
+    gap: 2rem;
+  }
+}
+
+.booking-main-pane {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+  min-height: auto;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.booking-summary-pane {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.booking-step-pane {
+  display: none;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+  min-height: auto;
+  box-sizing: border-box;
+  overflow: visible;
+}
+.booking-step-pane.active {
+  display: block;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+/* Service Selection Cards */
+.booking-item-card {
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  display: flex;
+  gap: 1.25rem;
+  position: relative;
+  transition: all var(--transition-normal);
+}
+.booking-item-card:hover {
+  border-color: var(--color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+.booking-item-card.selected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-softest);
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+.booking-item-card .card-check-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+.booking-item-card.selected .card-check-badge {
+  display: flex;
+}
+[dir="rtl"] .booking-item-card .card-check-badge {
+  right: auto;
+  left: 1rem;
+}
+
+.booking-item-thumb {
+  width: 90px;
+  height: 90px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Duration Select Pills */
+.duration-select-pill {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  line-height: 1;
+}
+.duration-select-pill:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.duration-select-pill.active {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(74, 107, 93, 0.25);
+}
+
+/* Therapist Selection */
+.therapist-select-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 640px) {
+  .therapist-select-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.therapist-choice-card {
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  position: relative;
+  transition: all var(--transition-fast);
+}
+.therapist-choice-card .card-check-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+.therapist-choice-card.selected .card-check-badge {
+  display: flex;
+}
+[dir="rtl"] .therapist-choice-card .card-check-badge {
+  right: auto;
+  left: 0.75rem;
+}
+.therapist-choice-card:hover {
+  border-color: var(--color-primary-light);
+  transform: translateY(-2px);
+}
+.therapist-choice-card.selected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-softest);
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+.therapist-choice-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Full Monthly Interactive Booking Calendar
+   ========================================================================== */
+.booking-calendar-wrapper {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.calendar-picker-card {
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.35rem;
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap;
+}
+
+.calendar-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.calendar-month-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.calendar-header-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.calendar-nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.calendar-nav-btn {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  padding: 0;
+}
+.calendar-nav-btn:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background: var(--color-primary-softest);
+  transform: translateY(-1px);
+}
+.calendar-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: var(--border-color);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.calendar-today-btn {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  line-height: 1;
+}
+.calendar-today-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background: var(--color-primary-softest);
+}
+
+/* Weekday header row (Sun to Sat) */
+.calendar-weekdays-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.calendar-weekday {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  padding: 0.25rem 0;
+}
+
+/* 7-Column Days Grid */
+.calendar-days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.calendar-day-empty {
+  min-height: 42px;
+  visibility: hidden;
+}
+
+.calendar-day-btn {
+  width: 100%;
+  min-height: 42px;
+  padding: 0.4rem 0.2rem;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid transparent;
+  background: var(--bg-surface);
+  color: var(--text-main);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all var(--transition-fast);
+  user-select: none;
+  font-family: var(--font-body);
+  box-sizing: border-box;
+}
+
+.calendar-day-btn .day-num {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.calendar-day-btn .day-status-label {
+  font-size: 0.625rem;
+  line-height: 1;
+  margin-top: 3px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.calendar-day-btn.is-available:hover {
+  border-color: var(--color-primary-light);
+  background: var(--color-primary-softest);
+  color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+/* Today indicator */
+.calendar-day-btn.is-today:not(.selected) {
+  border-color: var(--color-primary-light);
+  background: var(--color-primary-softest);
+}
+.calendar-day-btn.is-today:not(.selected) .day-num {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+.calendar-day-btn.is-today::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+/* Selected state (Solid Dark Green with subtle glow) */
+.calendar-day-btn.selected {
+  background: var(--color-primary) !important;
+  color: #ffffff !important;
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 3px 8px rgba(49, 91, 67, 0.3);
+}
+.calendar-day-btn.selected .day-num {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+.calendar-day-btn.selected .day-status-label {
+  color: #e2ede8 !important;
+}
+.calendar-day-btn.selected::after {
+  background: #ffffff !important;
+}
+
+/* Disabled states (Past, Off, Unavailable) */
+.calendar-day-btn.is-past,
+.calendar-day-btn.is-off,
+.calendar-day-btn.is-unavailable,
+.calendar-day-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed !important;
+  pointer-events: none;
+  background: var(--bg-surface-soft);
+  color: var(--text-muted) !important;
+  border-color: transparent !important;
+}
+.calendar-day-btn.is-past .day-num {
+  text-decoration: line-through;
+}
+
+/* Calendar Legend Footer */
+.calendar-footer-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--border-color);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legend-swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.legend-swatch.swatch-selected {
+  background: var(--color-primary);
+}
+.legend-swatch.swatch-available {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+}
+.legend-swatch.swatch-today {
+  border: 1.5px solid var(--color-primary);
+  background: var(--color-primary-softest);
+}
+.legend-swatch.swatch-unavailable {
+  background: var(--bg-surface-soft);
+  opacity: 0.5;
+  border: 1px dashed var(--border-color);
+}
+
+/* Fallback / Compatibility helper for date-slot-card */
+.date-picker-scroll {
+  display: block;
+  width: 100%;
+}
+.date-slot-card {
+  display: none;
+}
+
+/* RTL Support */
+[dir="rtl"] .calendar-prev-btn svg {
+  transform: rotate(180deg);
+}
+[dir="rtl"] .calendar-next-btn svg {
+  transform: rotate(180deg);
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] .calendar-picker-card {
+  background: var(--bg-surface);
+  border-color: var(--border-color);
+}
+[data-theme="dark"] .calendar-nav-btn {
+  background: var(--bg-surface);
+  border-color: var(--border-color);
+}
+[data-theme="dark"] .calendar-today-btn {
+  background: var(--bg-surface);
+  border-color: var(--border-color);
+}
+[data-theme="dark"] .calendar-day-btn {
+  background: var(--bg-surface);
+}
+[data-theme="dark"] .calendar-day-btn.is-available:hover {
+  background: rgba(49, 91, 67, 0.25);
+  border-color: var(--color-primary-light);
+}
+[data-theme="dark"] .calendar-day-btn.is-today:not(.selected) {
+  background: rgba(49, 91, 67, 0.18);
+  border-color: var(--color-primary-light);
+}
+[data-theme="dark"] .calendar-day-btn.is-past,
+[data-theme="dark"] .calendar-day-btn.is-off,
+[data-theme="dark"] .calendar-day-btn.is-unavailable {
+  background: var(--bg-surface-soft);
+}
+
+/* Responsive Rules */
+@media (max-width: 576px) {
+  .calendar-picker-card {
+    padding: 0.85rem 0.65rem;
+  }
+  .calendar-month-title {
+    font-size: 1.1rem;
+  }
+  .calendar-weekdays-grid,
+  .calendar-days-grid {
+    gap: 3px;
+  }
+  .calendar-day-btn {
+    min-height: 38px;
+    padding: 0.25rem 0.1rem;
+  }
+  .calendar-day-btn .day-num {
+    font-size: 0.875rem;
+  }
+  .calendar-day-btn .day-status-label {
+    display: none;
+  }
+  .calendar-footer-legend {
+    gap: 0.75rem;
+    font-size: 0.7rem;
+  }
+}
+
+.time-slots-group {
+  margin-top: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.time-slots-grid,
+.time-slots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  margin: 0.25rem 0 1rem 0;
+  box-sizing: border-box;
+}
+
+.time-slot-pill,
+.time-slot {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--border-color);
+  background: var(--bg-surface);
+  color: var(--text-main);
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all var(--transition-fast);
+  line-height: 1.2;
+}
+
+.time-slot-pill:hover,
+.time-slot:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background: var(--color-primary-softest);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-xs);
+}
+
+.time-slot-pill.selected,
+.time-slot.selected {
+  background: var(--color-primary) !important;
+  color: #ffffff !important;
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 2px 8px rgba(74, 107, 93, 0.3);
+}
+
+.time-slot-pill.booked,
+.time-slot-pill:disabled,
+.time-slot.booked,
+.time-slot:disabled {
+  background: var(--bg-surface-soft) !important;
+  color: var(--text-muted) !important;
+  border-color: var(--border-color) !important;
+  opacity: 0.45;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  pointer-events: none;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 480px) {
+  .time-slots-grid,
+  .time-slots {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .time-slot-pill,
+  .time-slot {
+    min-height: 46px;
+  }
+}
+
+/* Action button bar for step navigation */
+.booking-step-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .booking-step-actions {
+    flex-direction: column-reverse;
+    gap: 0.75rem;
+  }
+  .booking-step-actions .btn-wellness {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Booking Summary Card */
+.booking-summary-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: calc(var(--header-height) + 1.25rem);
+  height: auto;
+  min-height: auto;
+  box-sizing: border-box;
+}
+.summary-line-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px dashed var(--border-color);
+  font-size: 0.9375rem;
+}
+.summary-line-item:last-child {
+  border-bottom: none;
+}
+.summary-total-line {
+  padding-top: 1rem;
+  border-top: 2px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Booking Confirmation Page
+   ========================================================================== */
+.confirmation-page-main {
+  padding: 2.5rem 1rem 4.5rem;
+  background: var(--bg-body);
+  min-height: calc(100vh - 85px - 70px);
+  box-sizing: border-box;
+}
+
+.confirmation-container {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.confirmation-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl, 1.25rem);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 2.75rem 2.25rem 2.25rem;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.confirmation-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--color-success-bg, #e8f5e9);
+  color: var(--color-success, #2e7d32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 auto 1.25rem;
+  box-shadow: 0 4px 16px rgba(46, 125, 50, 0.15);
+}
+
+.confirmation-badge {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  background: var(--color-primary-softest, rgba(27, 67, 50, 0.08));
+  color: var(--color-primary, #1b4332);
+  margin-bottom: 0.75rem;
+}
+
+.confirmation-title {
+  font-family: var(--font-heading);
+  font-size: 2.15rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-main);
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
+.confirmation-subtitle {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  max-width: 480px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.confirmation-ref-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  background: var(--color-primary-softest, rgba(27, 67, 50, 0.06));
+  border: 1.5px dashed var(--color-primary, #1b4332);
+  border-radius: var(--radius-lg, 0.75rem);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.confirmation-ref-label {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.confirmation-ref-code {
+  font-family: var(--font-heading), monospace;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-primary, #1b4332);
+  letter-spacing: 0.05em;
+}
+
+.confirmation-section-heading {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0 0 0.75rem 0;
+}
+
+.appointment-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 1.5rem;
+  background: var(--bg-surface-soft, var(--bg-body));
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg, 0.75rem);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.appointment-meta-item .meta-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.appointment-meta-item .meta-val {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-main);
+  display: block;
+}
+
+.appointment-meta-item .meta-sub {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  display: block;
+  margin-top: 0.15rem;
+}
+
+.confirmation-pricing-card {
+  padding: 1rem 1.25rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg, 0.75rem);
+  margin-bottom: 1.75rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.confirmation-guidelines {
+  margin-bottom: 2rem;
+}
+
+.confirmation-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+  padding-top: 1.85rem;
+  border-top: 1px solid var(--border-color);
+  width: 100%;
+  box-sizing: border-box;
+}
+.confirmation-actions .btn-wellness {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .confirmation-page-main {
+    padding: 1.5rem 0.75rem 3rem;
+  }
+  .confirmation-card {
+    padding: 2rem 1.25rem 1.75rem;
+  }
+  .confirmation-title {
+    font-size: 1.65rem;
+  }
+  .appointment-meta-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 1.15rem;
+  }
+  .confirmation-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .confirmation-actions .btn-wellness {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   Review & Confirm Card (Step 5)
+   ========================================================================== */
+.review-section-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  transition: all var(--transition-fast);
+}
+.review-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--border-color);
+}
+.review-edit-btn {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.review-edit-btn:hover {
+  color: var(--color-primary-hover);
+}
+
+/* Stepper clickable completed steps */
+.stepper-step.completed {
+  cursor: pointer;
+}
+.stepper-step.completed:hover .stepper-circle {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 4px var(--color-primary-soft);
+}
+.stepper-step.completed:hover .stepper-title {
+  color: var(--color-primary);
+}
+
+/* Disabled button state */
+.btn-wellness:disabled,
+.btn-wellness.disabled {
+  opacity: 0.55 !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Date and Time Disabled States */
+.date-slot-card.disabled,
+.date-slot-card[disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+  background: var(--bg-surface-soft);
+  pointer-events: none;
+}
+.time-slot-pill.booked,
+.time-slot-pill:disabled {
+  background: var(--bg-surface-soft);
+  color: var(--text-muted);
+  opacity: 0.45;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  pointer-events: none;
+}
+
+/* Summary empty placeholder */
+.summary-empty-placeholder {
+  color: var(--text-muted);
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* Dark Mode Styles for Booking */
+[data-theme="dark"] .booking-item-card {
+  background: var(--bg-surface-elevated);
+}
+[data-theme="dark"] .booking-item-card.selected {
+  background: rgba(74, 107, 93, 0.18);
+  border-color: var(--color-primary-light);
+}
+[data-theme="dark"] .duration-select-pill {
+  background: var(--bg-body);
+  border-color: var(--border-color);
+  color: var(--text-main);
+}
+[data-theme="dark"] .duration-select-pill.active {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+[data-theme="dark"] .therapist-choice-card {
+  background: var(--bg-surface-elevated);
+}
+[data-theme="dark"] .therapist-choice-card.selected {
+  background: rgba(74, 107, 93, 0.18);
+  border-color: var(--color-primary-light);
+}
+[data-theme="dark"] .date-slot-card {
+  background: var(--bg-surface-elevated);
+}
+[data-theme="dark"] .date-slot-card.selected {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+[data-theme="dark"] .time-slot-pill,
+[data-theme="dark"] .time-slot {
+  background: var(--bg-surface-elevated);
+}
+[data-theme="dark"] .time-slot-pill.selected,
+[data-theme="dark"] .time-slot.selected {
+  background: var(--color-primary) !important;
+  color: #ffffff !important;
+}
+[data-theme="dark"] .booking-summary-card {
+  background: var(--bg-surface-elevated);
+}
+[data-theme="dark"] .review-section-card {
+  background: var(--bg-surface-elevated);
+}
+[data-theme="dark"] .confirmation-card {
+  background: var(--bg-surface-elevated);
+}
+[data-theme="dark"] .appointment-meta-grid {
+  background: var(--bg-surface-soft);
+}
+
+@media (max-width: 640px) {
+  .appointment-meta-grid {
+    grid-template-columns: 1fr;
+  }
+  .confirmation-body {
+    padding: 1.5rem;
+  }
+  .booking-item-thumb {
+    width: 75px;
+    height: 75px;
+  }
+}

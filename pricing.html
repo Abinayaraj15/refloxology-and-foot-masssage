@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Menu & Packages | SOLE HARMONY</title>
+  <meta name="description" content="Transparent, all-inclusive pricing for traditional foot reflexology, calming bodywork, multi-session passes, and custom wellness sessions.">
+
+    <!-- Favicon & Application Icons -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#203D2C">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header-footer.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container-custom header-inner">
+            <!-- Logo -->
+      <a href="index.html" class="site-logo" aria-label="Sole Harmony — Reflexology &amp; Foot Wellness">
+        <div class="logo-icon">
+          <img src="assets/icons/sole-harmony-symbol.png" alt="Sole Harmony — Reflexology &amp; Foot Wellness" class="logo-symbol-light">
+          <img src="assets/icons/sole-harmony-symbol-dark.png" alt="Sole Harmony — Reflexology &amp; Foot Wellness" class="logo-symbol-dark">
+        </div>
+        <div class="logo-text-wrap">
+          <span class="logo-title" data-config="brandName">SOLE HARMONY</span>
+          <span class="logo-subtitle" data-config="brandSubtitle">Traditional Reflexology &amp; Holistic Wellness</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu-desktop" aria-label="Main Navigation">
+        <div class="nav-dropdown home-nav-dropdown">
+          <a href="index.html" class="nav-link-custom" data-i18n="nav_home" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="home-dropdown-menu" role="menu">
+            <a href="index.html" class="home-menu-card" role="menuitem">
+              <div class="home-menu-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                </svg>
+              </div>
+              <div class="home-menu-info">
+                <span class="home-menu-title" data-i18n="nav_home_1">Home 1 — Serenity</span>
+                <span class="home-menu-desc" data-i18n="nav_home_1_desc">A calming, traditional reflexology experience</span>
+              </div>
+            </a>
+            <a href="home-2.html" class="home-menu-card" role="menuitem">
+              <div class="home-menu-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 16v-2.38C4 11.5 7 11 9 11s5 .5 5 2.62V16c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3Z"></path>
+                  <path d="M20 20v-1.5c0-1.5-2-2-3.5-2s-3.5.5-3.5 2V20c0 1.1.9 2 2 2h3c1.1 0 2-.9 2-2Z"></path>
+                  <circle cx="6" cy="7" r="1.5"></circle>
+                  <circle cx="10" cy="5.5" r="1.5"></circle>
+                  <circle cx="14" cy="6.5" r="1.5"></circle>
+                </svg>
+              </div>
+              <div class="home-menu-info">
+                <span class="home-menu-title" data-i18n="nav_home_2">Home 2 — Wellness</span>
+                <span class="home-menu-desc" data-i18n="nav_home_2_desc">Discover treatments, benefits, and personalized care</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link-custom" data-i18n="nav_about">About Us</a>
+        <a href="services.html" class="nav-link-custom" data-i18n="nav_services">Services</a>
+        <a href="gallery.html" class="nav-link-custom" data-i18n="nav_gallery">Gallery</a>
+        <a href="pricing.html" class="nav-link-custom active" data-i18n="nav_pricing">Pricing</a>
+        <a href="testimonials.html" class="nav-link-custom" data-i18n="nav_testimonials">Testimonials</a>
+        <a href="contact.html" class="nav-link-custom" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme & Direction Controls -->
+        <div class="header-mode-controls">
+          <button type="button" class="btn-header-icon btn-dir-toggle" title="Switch Layout Direction" aria-label="Switch Layout Direction">
+            <svg class="icon-dir-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 4l4 4-4 4"></path>
+              <path d="M21 8H3"></path>
+              <path d="M7 20l-4-4 4-4"></path>
+              <path d="M3 16h18"></path>
+            </svg>
+          </button>
+          <button type="button" class="btn-header-icon btn-theme-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
+            <svg class="icon-sun-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="icon-moon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+        </div>
+
+        <a href="booking.html" class="btn-wellness btn-primary-custom btn-sm header-book-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          <span class="header-book-text" data-i18n="nav_book">Book Appointment</span>
+        </a>
+
+        <button type="button" class="mobile-nav-toggle" aria-label="Open mobile menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop">
+    <div class="mobile-drawer">
+      <div class="mobile-drawer-header">
+                <div class="flex items-center gap-2">
+          <div class="logo-icon w-8 h-8">
+            <img src="assets/icons/sole-harmony-symbol.png" alt="Sole Harmony" class="logo-symbol-light">
+            <img src="assets/icons/sole-harmony-symbol-dark.png" alt="Sole Harmony" class="logo-symbol-dark">
+          </div>
+          <span class="font-heading font-bold text-main" style="font-size: 1.15rem;" data-config="brandName">SOLE HARMONY</span>
+        </div>
+        <button type="button" class="mobile-drawer-close" aria-label="Close menu">&times;</button>
+      </div>
+
+      <div class="mobile-nav-links mb-6">
+        <div class="mobile-nav-heading">Home Variations</div>
+        <a href="index.html" class="mobile-home-card">
+          <div class="mobile-home-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+            </svg>
+          </div>
+          <div class="mobile-home-info">
+            <span class="mobile-home-title" data-i18n="nav_home_1">Home 1 — Serenity</span>
+            <span class="mobile-home-desc" data-i18n="nav_home_1_desc">A calming, traditional reflexology experience</span>
+          </div>
+        </a>
+        <a href="home-2.html" class="mobile-home-card">
+          <div class="mobile-home-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 16v-2.38C4 11.5 7 11 9 11s5 .5 5 2.62V16c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3Z"></path>
+              <path d="M20 20v-1.5c0-1.5-2-2-3.5-2s-3.5.5-3.5 2V20c0 1.1.9 2 2 2h3c1.1 0 2-.9 2-2Z"></path>
+              <circle cx="6" cy="7" r="1.5"></circle>
+              <circle cx="10" cy="5.5" r="1.5"></circle>
+              <circle cx="14" cy="6.5" r="1.5"></circle>
+            </svg>
+          </div>
+          <div class="mobile-home-info">
+            <span class="mobile-home-title" data-i18n="nav_home_2">Home 2 — Wellness</span>
+            <span class="mobile-home-desc" data-i18n="nav_home_2_desc">Discover treatments, benefits, and personalized care</span>
+          </div>
+        </a>
+        <div class="mobile-nav-divider"></div>
+        <a href="about.html" class="mobile-nav-item" data-i18n="nav_about">About Studio</a>
+        <a href="services.html" class="mobile-nav-item" data-i18n="nav_services">Services & Rituals</a>
+        <a href="gallery.html" class="mobile-nav-item">Sanctuary Gallery</a>
+        <a href="pricing.html" class="mobile-nav-item active" data-i18n="nav_pricing">Pricing Menu</a>
+        <a href="testimonials.html" class="mobile-nav-item" data-i18n="nav_testimonials">Testimonials &amp; Reviews</a>
+        <a href="contact.html" class="mobile-nav-item" data-i18n="nav_contact">Contact & Location</a>
+      </div>
+
+      <div class="mt-auto pt-4 border-t" style="border-color: var(--border-color);">
+        <a href="booking.html" class="btn-wellness btn-primary-custom w-full" data-i18n="nav_book">
+          Book Appointment
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Header Banner -->
+    <section class="page-header-banner page-header-pricing">
+      <div class="container-custom">
+        <div class="page-hero-grid">
+          <div class="page-hero-content">
+            <nav class="breadcrumb-wellness" aria-label="Breadcrumb">
+              <a href="index.html" data-i18n="breadcrumb_home">Home</a>
+              <span class="breadcrumb-separator">/</span>
+              <span class="text-main font-semibold" data-i18n="breadcrumb_pricing">Pricing Menu</span>
+            </nav>
+            <span class="page-hero-badge">RATES, SERIES &amp; PACKAGES</span>
+            <h1 class="page-hero-heading">
+              <span class="page-hero-title-lead" data-i18n="pricing_hero_title_lead">Transparent</span>
+              <span class="page-hero-title-accent" data-i18n="pricing_hero_title_accent">Wellness Pricing</span>
+            </h1>
+            <p class="page-hero-desc" data-i18n="pricing_hero_desc">
+              Honest, all-inclusive rates with zero hidden charges and no advance card deposit.
+            </p>
+            <div class="hero-context-chips">
+              <span class="hero-context-chip">Sessions from $40</span>
+              <span class="hero-context-chip">Up to 15% Off Multi-Visit Series</span>
+              <span class="hero-context-chip">HSA / Wellness Stipend Receipts</span>
+            </div>
+            <div class="page-hero-mobile-visual" aria-hidden="true">
+              <img src="assets/images/hero/pricing-hero-mobile.jpg" alt="Transparent wellness pricing at Sole Harmony" class="page-hero-mobile-img" loading="lazy">
+            </div>
+          </div>
+          <div class="page-hero-visual-col" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: Individual Treatments Menu -->
+    <section class="section-py bg-cream">
+      <div class="container-custom">
+        
+        <!-- Notice of Proposed Catalog -->
+        <div class="pricing-banner-notice text-xs">
+          <span>🌿 <strong data-i18n="proposed_notice">Proposed service catalog — All offerings, durations, and rates are configured for review before final commercial launch.</strong></span>
+          <button type="button" onclick="window.print()" class="btn-wellness btn-secondary-custom btn-sm flex-shrink-0">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            <span>Print Menu</span>
+          </button>
+        </div>
+                        <!-- New Pricing Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="section-tag section-tag-gold" data-i18n="pricing_eyebrow_rates">OUR TREATMENTS &amp; RATES</span>
+          <h2 class="section-title mb-3" data-i18n="pricing_rates_title">Find Your Perfect Moment of Calm</h2>
+          <p class="section-desc mb-0" data-i18n="pricing_rates_desc">
+            Explore our traditional reflexology and massage experiences, with transparent pricing and flexible session durations to suit your wellness routine.
+          </p>
+        </div>
+
+        <!-- Service Cards Grid: 3 cols Desktop, 2 cols Tablet, 1 col Mobile -->
+        <div class="pricing-cards-grid">
+
+          <!-- Card 1: Traditional Foot Reflexology -->
+          <div class="pricing-service-card" data-service-id="traditional-foot-reflexology">
+            <div class="pricing-card-image-wrap">
+              <img src="assets/images/experience/foot-reflexology-experience.jpg" alt="Therapist performing Traditional Foot Reflexology" class="pricing-card-img" loading="lazy">
+              <span class="pricing-card-badge" data-i18n="badge_signature_ritual">Signature Ritual</span>
+            </div>
+            <div class="pricing-card-body">
+              <h3 class="pricing-card-title">
+                <a href="service-details.html?id=traditional-foot-reflexology" data-i18n="service_1_name">Traditional Foot Reflexology</a>
+              </h3>
+              <p class="pricing-card-desc" data-i18n="service_1_desc">
+                Traditional acupressure targeting meridian reflex zones on the soles, relieving systemic stress and restoring organ equilibrium.
+              </p>
+
+              <!-- Selected Rate Display -->
+              <div class="pricing-card-rate-display">
+                <div class="rate-label-wrap">
+                  <span class="rate-from-label" data-i18n="rate_selected_label">Selected Rate:</span>
+                  <span class="rate-duration-text js-card-duration">/ 60 min session</span>
+                </div>
+                <div class="rate-price-row">
+                  <span class="rate-currency">$</span>
+                  <span class="rate-amount js-card-price">75</span>
+                </div>
+              </div>
+
+              <!-- Interactive Duration Selectors (2x2 Grid) -->
+              <div class="pricing-durations-wrapper">
+                <span class="pricing-durations-label" data-i18n="choose_duration_label">Choose Duration &amp; Rate:</span>
+                <div class="duration-options-grid" role="radiogroup" aria-label="Traditional Foot Reflexology session durations">
+                  <button type="button" class="duration-option-pill" data-duration="30" data-price="45" role="radio" aria-checked="false" aria-label="30 minutes for $45">
+                    <span class="pill-left"><span class="pill-time">30 min</span> <span class="pill-sep">·</span> <span class="pill-price">$45</span></span>
+                  </button>
+                  <button type="button" class="duration-option-pill" data-duration="45" data-price="60" role="radio" aria-checked="false" aria-label="45 minutes for $60">
+                    <span class="pill-left"><span class="pill-time">45 min</span> <span class="pill-sep">·</span> <span class="pill-price">$60</span></span>
+                  </button>
+                  <button type="button" class="duration-option-pill active" data-duration="60" data-price="75" data-popular="true" role="radio" aria-checked="true" aria-label="60 minutes for $75 (Popular)">
+                    <span class="pill-left"><span class="pill-time">60 min</span> <span class="pill-sep">·</span> <span class="pill-price">$75</span></span>
+                    <span class="pill-pop-tag" data-i18n="pill_popular_badge">Popular</span>
+                  </button>
+                  <button type="button" class="duration-option-pill" data-duration="90" data-price="105" role="radio" aria-checked="false" aria-label="90 minutes for $105">
+                    <span class="pill-left"><span class="pill-time">90 min</span> <span class="pill-sep">·</span> <span class="pill-price">$105</span></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pricing-card-footer">
+                <a href="booking.html?service=traditional-foot-reflexology&duration=60" 
+                   class="pricing-card-btn" 
+                   data-selected-duration="60" 
+                   data-selected-price="75">
+                  <span data-i18n="btn_book_service">Book This Service</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="rtl:rotate-180"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Relaxing Foot Massage -->
+          <div class="pricing-service-card" data-service-id="relaxing-foot-massage">
+            <div class="pricing-card-image-wrap">
+              <img src="assets/images/foot-massage/herbal-foot-bath.jpg" alt="Relaxing Foot Massage with warm botanical towels" class="pricing-card-img" loading="lazy">
+              <span class="pricing-card-badge" data-i18n="badge_herbal_botanical">Herbal &amp; Botanical</span>
+            </div>
+            <div class="pricing-card-body">
+              <h3 class="pricing-card-title">
+                <a href="service-details.html?id=relaxing-foot-massage" data-i18n="service_2_name">Relaxing Foot Massage</a>
+              </h3>
+              <p class="pricing-card-desc" data-i18n="service_2_desc">
+                A soothing, rhythmic massage blending nourishing botanical oils with warm towels, gentle stretches, and calming tension strokes.
+              </p>
+
+              <!-- Selected Rate Display -->
+              <div class="pricing-card-rate-display">
+                <div class="rate-label-wrap">
+                  <span class="rate-from-label" data-i18n="rate_selected_label">Selected Rate:</span>
+                  <span class="rate-duration-text js-card-duration">/ 60 min session</span>
+                </div>
+                <div class="rate-price-row">
+                  <span class="rate-currency">$</span>
+                  <span class="rate-amount js-card-price">68</span>
+                </div>
+              </div>
+
+              <!-- Interactive Duration Selectors (2x2 Grid) -->
+              <div class="pricing-durations-wrapper">
+                <span class="pricing-durations-label" data-i18n="choose_duration_label">Choose Duration &amp; Rate:</span>
+                <div class="duration-options-grid" role="radiogroup" aria-label="Relaxing Foot Massage session durations">
+                  <button type="button" class="duration-option-pill" data-duration="30" data-price="40" role="radio" aria-checked="false" aria-label="30 minutes for $40">
+                    <span class="pill-left"><span class="pill-time">30 min</span> <span class="pill-sep">·</span> <span class="pill-price">$40</span></span>
+                  </button>
+                  <button type="button" class="duration-option-pill" data-duration="45" data-price="52" role="radio" aria-checked="false" aria-label="45 minutes for $52">
+                    <span class="pill-left"><span class="pill-time">45 min</span> <span class="pill-sep">·</span> <span class="pill-price">$52</span></span>
+                  </button>
+                  <button type="button" class="duration-option-pill active" data-duration="60" data-price="68" data-popular="true" role="radio" aria-checked="true" aria-label="60 minutes for $68 (Popular)">
+                    <span class="pill-left"><span class="pill-time">60 min</span> <span class="pill-sep">·</span> <span class="pill-price">$68</span></span>
+                    <span class="pill-pop-tag" data-i18n="pill_popular_badge">Popular</span>
+                  </button>
+                  <button type="button" class="duration-option-pill" data-duration="90" data-price="95" role="radio" aria-checked="false" aria-label="90 minutes for $95">
+                    <span class="pill-left"><span class="pill-time">90 min</span> <span class="pill-sep">·</span> <span class="pill-price">$95</span></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pricing-card-footer">
+                <a href="booking.html?service=relaxing-foot-massage&duration=60" 
+                   class="pricing-card-btn" 
+                   data-selected-duration="60" 
+                   data-selected-price="68">
+                  <span data-i18n="btn_book_service">Book This Service</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="rtl:rotate-180"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Full-Body Reflexology -->
+          <div class="pricing-service-card" data-service-id="full-body-reflexology">
+            <div class="pricing-card-image-wrap">
+              <img src="assets/images/body-massage/full-body-reflexology.jpg" alt="Therapist performing Full-Body Reflexology" class="pricing-card-img" loading="lazy">
+              <span class="pricing-card-badge" data-i18n="badge_comprehensive_balance">Comprehensive Balance</span>
+            </div>
+            <div class="pricing-card-body">
+              <h3 class="pricing-card-title">
+                <a href="service-details.html?id=full-body-reflexology" data-i18n="service_3_name">Full-Body Reflexology</a>
+              </h3>
+              <p class="pricing-card-desc" data-i18n="service_3_desc">
+                Comprehensive acupressure across spine, neck, shoulders, and plantar meridians to dissolve deep muscular tension.
+              </p>
+
+              <!-- Selected Rate Display -->
+              <div class="pricing-card-rate-display">
+                <div class="rate-label-wrap">
+                  <span class="rate-from-label" data-i18n="rate_selected_label">Selected Rate:</span>
+                  <span class="rate-duration-text js-card-duration">/ 60 min session</span>
+                </div>
+                <div class="rate-price-row">
+                  <span class="rate-currency">$</span>
+                  <span class="rate-amount js-card-price">85</span>
+                </div>
+              </div>
+
+              <!-- Interactive Duration Selectors (Balanced 2-row Grid) -->
+              <div class="pricing-durations-wrapper">
+                <span class="pricing-durations-label" data-i18n="choose_duration_label">Choose Duration &amp; Rate:</span>
+                <div class="duration-options-grid" role="radiogroup" aria-label="Full-Body Reflexology session durations">
+                  <button type="button" class="duration-option-pill" data-duration="45" data-price="65" role="radio" aria-checked="false" aria-label="45 minutes for $65">
+                    <span class="pill-left"><span class="pill-time">45 min</span> <span class="pill-sep">·</span> <span class="pill-price">$65</span></span>
+                  </button>
+                  <button type="button" class="duration-option-pill active" data-duration="60" data-price="85" data-popular="true" role="radio" aria-checked="true" aria-label="60 minutes for $85 (Popular)">
+                    <span class="pill-left"><span class="pill-time">60 min</span> <span class="pill-sep">·</span> <span class="pill-price">$85</span></span>
+                    <span class="pill-pop-tag" data-i18n="pill_popular_badge">Popular</span>
+                  </button>
+                  <button type="button" class="duration-option-pill pill-span-2" data-duration="90" data-price="115" role="radio" aria-checked="false" aria-label="90 minutes for $115">
+                    <span class="pill-left"><span class="pill-time">90 min</span> <span class="pill-sep">·</span> <span class="pill-price">$115</span></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pricing-card-footer">
+                <a href="booking.html?service=full-body-reflexology&duration=60" 
+                   class="pricing-card-btn" 
+                   data-selected-duration="60" 
+                   data-selected-price="85">
+                  <span data-i18n="btn_book_service">Book This Service</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="rtl:rotate-180"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Head, Neck & Shoulder Massage -->
+          <div class="pricing-service-card" data-service-id="head-neck-shoulder-massage">
+            <div class="pricing-card-image-wrap">
+              <img src="assets/images/body-massage/neck-shoulder.jpg" alt="Focused Head, Neck & Shoulder Massage" class="pricing-card-img" loading="lazy">
+              <span class="pricing-card-badge" data-i18n="badge_targeted_relief">Targeted Relief</span>
+            </div>
+            <div class="pricing-card-body">
+              <h3 class="pricing-card-title">
+                <a href="service-details.html?id=head-neck-shoulder-massage" data-i18n="service_4_name">Head, Neck &amp; Shoulder Massage</a>
+              </h3>
+              <p class="pricing-card-desc" data-i18n="service_4_desc">
+                Focused relief for upper-body strain, cervical compression, and tension headaches caused by modern desk work.
+              </p>
+
+              <!-- Selected Rate Display -->
+              <div class="pricing-card-rate-display">
+                <div class="rate-label-wrap">
+                  <span class="rate-from-label" data-i18n="rate_selected_label">Selected Rate:</span>
+                  <span class="rate-duration-text js-card-duration">/ 45 min session</span>
+                </div>
+                <div class="rate-price-row">
+                  <span class="rate-currency">$</span>
+                  <span class="rate-amount js-card-price">58</span>
+                </div>
+              </div>
+
+              <!-- Interactive Duration Selectors (Balanced 2-row Grid) -->
+              <div class="pricing-durations-wrapper">
+                <span class="pricing-durations-label" data-i18n="choose_duration_label">Choose Duration &amp; Rate:</span>
+                <div class="duration-options-grid" role="radiogroup" aria-label="Head, Neck & Shoulder Massage session durations">
+                  <button type="button" class="duration-option-pill" data-duration="30" data-price="42" role="radio" aria-checked="false" aria-label="30 minutes for $42">
+                    <span class="pill-left"><span class="pill-time">30 min</span> <span class="pill-sep">·</span> <span class="pill-price">$42</span></span>
+                  </button>
+                  <button type="button" class="duration-option-pill active" data-duration="45" data-price="58" data-popular="true" role="radio" aria-checked="true" aria-label="45 minutes for $58 (Popular)">
+                    <span class="pill-left"><span class="pill-time">45 min</span> <span class="pill-sep">·</span> <span class="pill-price">$58</span></span>
+                    <span class="pill-pop-tag" data-i18n="pill_popular_badge">Popular</span>
+                  </button>
+                  <button type="button" class="duration-option-pill pill-span-2" data-duration="60" data-price="75" role="radio" aria-checked="false" aria-label="60 minutes for $75">
+                    <span class="pill-left"><span class="pill-time">60 min</span> <span class="pill-sep">·</span> <span class="pill-price">$75</span></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pricing-card-footer">
+                <a href="booking.html?service=head-neck-shoulder-massage&duration=45" 
+                   class="pricing-card-btn" 
+                   data-selected-duration="45" 
+                   data-selected-price="58">
+                  <span data-i18n="btn_book_service">Book This Service</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="rtl:rotate-180"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Relaxation Massage -->
+          <div class="pricing-service-card" data-service-id="relaxation-massage">
+            <div class="pricing-card-image-wrap">
+              <img src="assets/images/gallery/gallery-3.jpg" alt="Restorative slow rhythmic back massage strokes" class="pricing-card-img" loading="lazy">
+              <span class="pricing-card-badge" data-i18n="badge_restorative_flow">Restorative Flow</span>
+            </div>
+            <div class="pricing-card-body">
+              <h3 class="pricing-card-title">
+                <a href="service-details.html?id=relaxation-massage" data-i18n="service_5_name">Relaxation Massage</a>
+              </h3>
+              <p class="pricing-card-desc" data-i18n="service_5_desc">
+                A restorative head-to-toe session integrating long flowing strokes, warm towels, and balancing botanical aromas.
+              </p>
+
+              <!-- Selected Rate Display -->
+              <div class="pricing-card-rate-display">
+                <div class="rate-label-wrap">
+                  <span class="rate-from-label" data-i18n="rate_selected_label">Selected Rate:</span>
+                  <span class="rate-duration-text js-card-duration">/ 90 min session</span>
+                </div>
+                <div class="rate-price-row">
+                  <span class="rate-currency">$</span>
+                  <span class="rate-amount js-card-price">120</span>
+                </div>
+              </div>
+
+              <!-- Interactive Duration Selectors (Balanced 2-row Grid) -->
+              <div class="pricing-durations-wrapper">
+                <span class="pricing-durations-label" data-i18n="choose_duration_label">Choose Duration &amp; Rate:</span>
+                <div class="duration-options-grid" role="radiogroup" aria-label="Relaxation Massage session durations">
+                  <button type="button" class="duration-option-pill" data-duration="60" data-price="85" role="radio" aria-checked="false" aria-label="60 minutes for $85">
+                    <span class="pill-left"><span class="pill-time">60 min</span> <span class="pill-sep">·</span> <span class="pill-price">$85</span></span>
+                  </button>
+                  <button type="button" class="duration-option-pill active" data-duration="90" data-price="120" data-popular="true" role="radio" aria-checked="true" aria-label="90 minutes for $120 (Popular)">
+                    <span class="pill-left"><span class="pill-time">90 min</span> <span class="pill-sep">·</span> <span class="pill-price">$120</span></span>
+                    <span class="pill-pop-tag" data-i18n="pill_popular_badge">Popular</span>
+                  </button>
+                  <button type="button" class="duration-option-pill pill-span-2" data-duration="120" data-price="155" role="radio" aria-checked="false" aria-label="120 minutes for $155">
+                    <span class="pill-left"><span class="pill-time">120 min</span> <span class="pill-sep">·</span> <span class="pill-price">$155</span></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pricing-card-footer">
+                <a href="booking.html?service=relaxation-massage&duration=90" 
+                   class="pricing-card-btn" 
+                   data-selected-duration="90" 
+                   data-selected-price="120">
+                  <span data-i18n="btn_book_service">Book This Service</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="rtl:rotate-180"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Custom Wellness Session -->
+          <div class="pricing-service-card" data-service-id="custom-wellness-session">
+            <div class="pricing-card-image-wrap">
+              <img src="assets/images/gallery/gallery-2.jpg" alt="Bespoke botanical compress and herbal soaking preparation" class="pricing-card-img" loading="lazy">
+              <span class="pricing-card-badge" data-i18n="badge_bespoke_consultation">Bespoke Consultation</span>
+            </div>
+            <div class="pricing-card-body">
+              <h3 class="pricing-card-title">
+                <a href="service-details.html?id=custom-wellness-session" data-i18n="service_6_name">Custom Wellness Session</a>
+              </h3>
+              <p class="pricing-card-desc" data-i18n="service_6_desc">
+                A tailored consultation and treatment combining foot zone reflexology with focused muscular release.
+              </p>
+
+              <!-- Selected Rate Display -->
+              <div class="pricing-card-rate-display">
+                <div class="rate-label-wrap">
+                  <span class="rate-from-label" data-i18n="rate_selected_label">Selected Rate:</span>
+                  <span class="rate-duration-text js-card-duration">/ 90 min session</span>
+                </div>
+                <div class="rate-price-row">
+                  <span class="rate-currency">$</span>
+                  <span class="rate-amount js-card-price">125</span>
+                </div>
+              </div>
+
+              <!-- Interactive Duration Selectors (Balanced 2-row Grid) -->
+              <div class="pricing-durations-wrapper">
+                <span class="pricing-durations-label" data-i18n="choose_duration_label">Choose Duration &amp; Rate:</span>
+                <div class="duration-options-grid" role="radiogroup" aria-label="Custom Wellness Session durations">
+                  <button type="button" class="duration-option-pill" data-duration="60" data-price="90" role="radio" aria-checked="false" aria-label="60 minutes for $90">
+                    <span class="pill-left"><span class="pill-time">60 min</span> <span class="pill-sep">·</span> <span class="pill-price">$90</span></span>
+                  </button>
+                  <button type="button" class="duration-option-pill active" data-duration="90" data-price="125" data-popular="true" role="radio" aria-checked="true" aria-label="90 minutes for $125 (Popular)">
+                    <span class="pill-left"><span class="pill-time">90 min</span> <span class="pill-sep">·</span> <span class="pill-price">$125</span></span>
+                    <span class="pill-pop-tag" data-i18n="pill_popular_badge">Popular</span>
+                  </button>
+                  <button type="button" class="duration-option-pill pill-span-2" data-duration="120" data-price="160" role="radio" aria-checked="false" aria-label="120 minutes for $160">
+                    <span class="pill-left"><span class="pill-time">120 min</span> <span class="pill-sep">·</span> <span class="pill-price">$160</span></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="pricing-card-footer">
+                <a href="booking.html?service=custom-wellness-session&duration=90" 
+                   class="pricing-card-btn" 
+                   data-selected-duration="90" 
+                   data-selected-price="125">
+                  <span data-i18n="btn_book_service">Book This Service</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="rtl:rotate-180"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Section: Your Visit, Made Simple -->
+        <div class="pricing-steps-section">
+          <div class="text-center max-w-xl mx-auto mb-10">
+            <span class="section-tag section-tag-gold" data-i18n="pricing_steps_tag">EFFORTLESS WELLNESS</span>
+            <h3 class="section-title text-2xl md:text-3xl mb-2" data-i18n="pricing_steps_title">Your Visit, Made Simple</h3>
+            <p class="text-secondary text-sm mb-0" data-i18n="pricing_steps_desc">
+              A seamless, tranquil journey from reservation to your first soothing herbal foot bath.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+            <!-- Step 1 -->
+            <div class="pricing-step-card">
+              <div class="step-number-circle">01</div>
+              <h4 class="font-heading text-xl font-bold text-main mb-2" data-i18n="pricing_step_1_title">Choose Your Treatment</h4>
+              <p class="text-secondary text-sm leading-relaxed mb-0" data-i18n="pricing_step_1_desc">
+                Select from our traditional foot reflexology, rhythmic massages, or targeted neck &amp; shoulder therapies.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="pricing-step-card">
+              <div class="step-number-circle">02</div>
+              <h4 class="font-heading text-xl font-bold text-main mb-2" data-i18n="pricing_step_2_title">Select Session Duration</h4>
+              <p class="text-secondary text-sm leading-relaxed mb-0" data-i18n="pricing_step_2_desc">
+                Choose from 30 to 120-minute sessions tailored to your schedule, bodily fatigue, and wellness goals.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="pricing-step-card">
+              <div class="step-number-circle">03</div>
+              <h4 class="font-heading text-xl font-bold text-main mb-2" data-i18n="pricing_step_3_title">Book Your Appointment</h4>
+              <p class="text-secondary text-sm leading-relaxed mb-0" data-i18n="pricing_step_3_desc">
+                Reserve your private sanctuary suite online with instant confirmation and zero advance card deposit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Transparency Note Box -->
+          <div class="pricing-transparency-box">
+            <span class="text-primary-custom text-xl">🌿</span>
+            <p class="text-sm font-medium mb-0 text-main" data-i18n="pricing_transparency_note">
+              Clear pricing, no hidden treatment charges. Please confirm appointment availability when booking.
+            </p>
+          </div>
+        </div>
+
+        <!-- Section 2: Multi-Session Wellness Packages -->
+        <div class="mb-16">
+          <div class="section-header-center">
+            <span class="section-tag" data-i18n="pricing_eyebrow_packages">Continuous Restoration</span>
+            <h2 class="section-title mb-2" data-i18n="pricing_packages_title">Multi-Session Wellness Packages</h2>
+            <p class="section-desc" data-i18n="pricing_packages_sub">
+              Enjoy lasting savings when committing to regular bodily care, nervous recovery, and seasonal meridian balance.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Package 1: 3-Session -->
+            <div class="card-wellness p-6 rounded-2xl flex flex-col justify-between border border-color">
+              <div>
+                <span class="badge-wellness mb-3" style="background:var(--bg-surface-soft);">Entry Series</span>
+                <h3 class="font-heading text-xl font-bold mb-2 text-main" data-i18n="pkg_3_title">3-Session Restorative Reset</h3>
+                <p class="text-secondary text-xs mb-4">Recommended for acute stress recovery, athletic regeneration, or travel relief.</p>
+                <div class="flex items-baseline gap-2 mb-4">
+                  <span class="font-heading text-3xl font-bold text-primary-custom">$200</span>
+                  <span class="text-xs text-muted-custom">($66.60 / session)</span>
+                </div>
+                <ul class="flex flex-col gap-2 text-xs text-secondary mb-6">
+                  <li class="flex items-center gap-2"><span class="text-primary-custom font-bold">✓</span> Three 60-Minute Reflexology or Massage sessions</li>
+                  <li class="flex items-center gap-2"><span class="text-primary-custom font-bold">✓</span> Complimentary floral foot soak every session</li>
+                  <li class="flex items-center gap-2"><span class="text-primary-custom font-bold">✓</span> Transferable to friends or partners</li>
+                  <li class="flex items-center gap-2"><span class="text-primary-custom font-bold">✓</span> Valid for 6 months</li>
+                </ul>
+              </div>
+              <a href="booking.html?service=traditional-foot-reflexology&package=3-session" class="btn-wellness btn-secondary-custom w-full text-center">Reserve 3-Session Pass</a>
+            </div>
+
+            <!-- Package 2: 5-Session -->
+            <div class="card-wellness p-6 rounded-2xl flex flex-col justify-between relative" style="border: 2px solid var(--color-primary); background: linear-gradient(180deg, var(--bg-surface) 0%, var(--color-primary-softest) 100%);">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <span class="badge-wellness" style="background:var(--color-primary); color:#FFFFFF;">Most Popular</span>
+                  <span class="text-xs font-bold text-primary-custom uppercase tracking-wider">Save 15%</span>
+                </div>
+                <h3 class="font-heading text-xl font-bold mb-2 text-main" data-i18n="pkg_5_title">5-Session Meridian Journey</h3>
+                <p class="text-secondary text-xs mb-4">Ideal for desk workers, ongoing sleep improvements, and monthly wellness maintenance.</p>
+                <div class="flex items-baseline gap-2 mb-4">
+                  <span class="font-heading text-3xl font-bold text-primary-custom">$320</span>
+                  <span class="text-xs text-muted-custom">($64.00 / session)</span>
+                </div>
+                <ul class="flex flex-col gap-2 text-xs text-secondary mb-6">
+                  <li class="flex items-center gap-2"><span class="text-primary-custom font-bold">✓</span> Five 60-Minute sessions across catalog</li>
+                  <li class="flex items-center gap-2"><span class="text-primary-custom font-bold">✓</span> Complimentary hot basalt stone add-on</li>
+                  <li class="flex items-center gap-2"><span class="text-primary-custom font-bold">✓</span> Priority weekend reservation status</li>
+                  <li class="flex items-center gap-2"><span class="text-primary-custom font-bold">✓</span> Valid for 12 months</li>
+                </ul>
+              </div>
+              <a href="booking.html?service=traditional-foot-reflexology&package=5-session" class="btn-wellness btn-primary-custom w-full text-center">Reserve 5-Session Pass</a>
+            </div>
+
+            <!-- Package 3: 10-Session -->
+            <div class="card-wellness p-6 rounded-2xl flex flex-col justify-between border border-color">
+              <div>
+                <span class="badge-wellness mb-3" style="background:var(--color-gold-soft); color:var(--color-gold);">Best Long-Term Value</span>
+                <h3 class="font-heading text-xl font-bold mb-2 text-main" data-i18n="pkg_10_title">10-Session Holistic Care</h3>
+                <p class="text-secondary text-xs mb-4">Our most comprehensive commitment to whole-body balance and meridian longevity.</p>
+                <div class="flex items-baseline gap-2 mb-4">
+                  <span class="font-heading text-3xl font-bold text-primary-custom">$600</span>
+                  <span class="text-xs text-muted-custom">($60.00 / session)</span>
+                </div>
+                <ul class="flex flex-col gap-2 text-xs text-secondary mb-6">
+                  <li class="flex items-center gap-2"><span class="text-primary-custom font-bold">✓</span> Ten 60-Minute sessions across catalog</li>
+                  <li class="flex items-center gap-2"><span class="text-primary-custom font-bold">✓</span> Preferred practitioner lock-in guarantee</li>
+                  <li class="flex items-center gap-2"><span class="text-primary-custom font-bold">✓</span> Complimentary take-home herbal tea blend</li>
+                  <li class="flex items-center gap-2"><span class="text-primary-custom font-bold">✓</span> Valid for 18 months, zero penalty reschedule</li>
+                </ul>
+              </div>
+              <a href="booking.html?service=custom-wellness-session&package=10-session" class="btn-wellness btn-secondary-custom w-full text-center">Reserve 10-Session Pass</a>
+            </div>
+          </div>
+
+          <div class="pricing-banner-notice text-xs mt-8" style="background: var(--bg-surface-soft);">
+            <span>🏆 <strong>16+ Years Transparent Rate Guarantee (Est. 2010):</strong> Every session includes herbal soak, private linen suite, itemized HSA/employer wellness receipts, and full hands-on time.</span>
+            <a href="testimonials.html" class="btn-wellness btn-outline-custom btn-sm flex-shrink-0">See Client Reviews →</a>
+          </div>
+        </div>
+
+        <!-- Section 3: Confirmed Studio Policies -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="card-wellness p-8 rounded-2xl border border-color">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background: var(--color-primary-soft); color: var(--color-primary);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <h4 class="font-heading text-lg font-bold text-main mb-0" data-i18n="policy_cancellation_title">Cancellation &amp; Rescheduling Policy</h4>
+            </div>
+            <p class="text-secondary text-sm leading-relaxed mb-0">
+              We respect your schedule and request the same consideration. Cancellations or rescheduling require at least <strong>24 hours advance notice</strong>. Appointments cancelled under 24 hours may incur a 50% reservation fee so our therapists may be fairly compensated.
+            </p>
+          </div>
+
+          <div class="card-wellness p-8 rounded-2xl border border-color">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background: var(--color-gold-soft); color: var(--color-gold);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+              </div>
+              <h4 class="font-heading text-lg font-bold text-main mb-0" data-i18n="policy_deposit_title">Sanctuary Payment Policy</h4>
+            </div>
+            <p class="text-secondary text-sm leading-relaxed mb-0">
+              <strong>Zero advance deposit required</strong> to reserve your appointment online. Payment is settled upon departure at our front desk. We accept all major credit/debit cards, Apple Pay, Google Pay, and cash. Tips for practitioners are discretionary and appreciated.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Closing CTA Banner -->
+    <section class="cta-sanctuary-banner">
+      <div class="container-custom text-center">
+        <span class="cta-sanctuary-badge">Honest All-Inclusive Care</span>
+        <h2 class="cta-sanctuary-title">Ready to Reserve Your Treatment or Package?</h2>
+        <p class="cta-sanctuary-desc">
+          Hold your preferred date and specialist in minutes with zero upfront charges, complimentary warm soak, and herbal tea ceremony included.
+        </p>
+        <div class="cta-sanctuary-actions">
+          <a href="booking.html" class="btn-wellness btn-terracotta btn-lg">Book an Appointment</a>
+          <a href="contact.html" class="btn-wellness cta-banner-secondary-btn btn-lg">Inquire About Packages</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container-custom">
+      <div class="footer-top">
+        <!-- Col 1: Studio Identity -->
+        <div>
+          <a href="index.html" class="footer-logo site-logo flex items-center gap-3 mb-4" aria-label="Sole Harmony - Return to homepage">
+            <div class="logo-icon w-11 h-11">
+              <img src="assets/icons/sole-harmony-symbol.png" alt="Sole Harmony - Reflexology &amp; Foot Wellness" class="logo-symbol-light">
+              <img src="assets/icons/sole-harmony-symbol-dark.png" alt="Sole Harmony - Reflexology &amp; Foot Wellness" class="logo-symbol-dark">
+            </div>
+            <div class="logo-text-wrap">
+              <span class="font-heading font-bold text-main logo-title" style="font-size: 1.35rem;" data-config="brandName">SOLE HARMONY</span>
+              <span class="logo-subtitle" style="font-size: 0.65rem;" data-config="brandSubtitle">Traditional Reflexology &amp; Holistic Wellness</span>
+            </div>
+          </a>
+          <p class="text-secondary text-sm mb-6" style="line-height: 1.7; max-width: 320px;">
+            A premier wellness sanctuary offering authentic foot reflexology, calming bodywork, and holistic sensory renewal.
+          </p>
+          <div class="flex items-center gap-3">
+            <span class="badge-wellness" style="background: var(--color-primary-soft);">Certified TCM Facility</span>
+            <span class="badge-wellness" style="background: var(--color-gold-soft); color: var(--color-gold);">100% Organic Oils</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Studio Pages -->
+        <div>
+          <h4 class="footer-col-title">Studio Pages</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html">About Our Philosophy</a></li>
+            <li><a href="services.html">Treatment Services</a></li>
+            <li><a href="gallery.html">Sanctuary Gallery</a></li>
+            <li><a href="benefits.html">Reflexology Foot Map</a></li>
+            <li><a href="pricing.html">Pricing Menu &amp; Packages</a></li>
+            <li><a href="therapists.html">Master Practitioners</a></li>
+            <li><a href="testimonials.html">Client Testimonials</a></li>
+            <li><a href="contact.html">Studio Location &amp; Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Wellness Treatments -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer_treatments">Wellness Treatments</h4>
+          <ul class="footer-links-list">
+            <li><a href="service-details.html?id=traditional-foot-reflexology" data-i18n="service_1_name">Traditional Foot Reflexology</a></li>
+            <li><a href="service-details.html?id=relaxing-foot-massage" data-i18n="service_2_name">Relaxing Foot Massage</a></li>
+            <li><a href="service-details.html?id=full-body-reflexology" data-i18n="service_3_name">Full-Body Reflexology</a></li>
+            <li><a href="service-details.html?id=head-neck-shoulder-massage" data-i18n="service_4_name">Head, Neck &amp; Shoulder Massage</a></li>
+            <li><a href="service-details.html?id=relaxation-massage" data-i18n="service_5_name">Relaxation Massage</a></li>
+            <li><a href="service-details.html?id=custom-wellness-session" data-i18n="service_6_name">Custom Wellness Session</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Studio Hours & Contact -->
+        <div>
+          <h4 class="footer-col-title">Studio Hours</h4>
+          <table class="hours-table mb-4">
+            <tbody>
+              <tr><td>Monday – Friday</td><td>9:00 AM – 9:00 PM</td></tr>
+              <tr><td>Saturday</td><td>9:30 AM – 8:30 PM</td></tr>
+              <tr><td>Sunday</td><td>10:00 AM – 7:00 PM</td></tr>
+            </tbody>
+          </table>
+          <p class="text-xs text-secondary mb-2">
+            <strong>Address:</strong> <span data-config="addressFull">482 Harmony Way, Suite 100, Wellness District</span>
+          </p>
+          <p class="text-xs text-secondary mb-0">
+            <strong>Telephone:</strong> <span data-config="phone">(555) 382-7653</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          © <span class="current-year">2026</span> <span data-config="brandName">SOLE HARMONY</span>. <span data-i18n="footer_rights">All rights reserved. Dedicated to authentic natural wellness.</span>
+        </div>
+        <div class="flex items-center gap-4 text-xs">
+          <a href="about.html" class="text-secondary" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="contact.html" class="text-secondary" data-i18n="nav_contact">Contact</a>
+          <a href="booking.html" class="text-secondary" data-i18n="nav_book">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/notifications.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/pricing.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

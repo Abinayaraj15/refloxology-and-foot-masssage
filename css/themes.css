@@ -1,0 +1,254 @@
+/**
+ * SOLE HARMONY - Theme Switching (Light & Dark Mode)
+ * Ensures consistent, accessible contrast across all components, forms, tables, modals, and booking interfaces.
+ */
+
+[data-theme="dark"] body {
+  background-color: var(--bg-body);
+  color: var(--text-main);
+}
+
+[data-theme="dark"] .site-header {
+  background-color: rgba(34, 39, 33, 0.95);
+  border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .top-bar {
+  background-color: #121512;
+  border-bottom-color: var(--border-color);
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .card-wellness,
+[data-theme="dark"] .service-card,
+[data-theme="dark"] .booking-item-card,
+[data-theme="dark"] .therapist-choice-card,
+[data-theme="dark"] .date-slot-card,
+[data-theme="dark"] .time-slot-pill,
+[data-theme="dark"] .booking-summary-card,
+[data-theme="dark"] .confirmation-card,
+[data-theme="dark"] .wellness-accordion-item,
+[data-theme="dark"] .nav-dropdown-menu,
+[data-theme="dark"] .mobile-drawer {
+  background-color: var(--bg-surface);
+  border-color: var(--border-color);
+  color: var(--text-main);
+}
+
+[data-theme="dark"] .service-card-footer,
+[data-theme="dark"] .wellness-modal-footer,
+[data-theme="dark"] .site-footer {
+  background-color: var(--bg-surface-soft);
+  border-color: var(--border-color);
+}
+
+/* Forms & Inputs */
+[data-theme="dark"] .form-control-custom,
+[data-theme="dark"] .form-select-custom,
+[data-theme="dark"] .search-input-field,
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+  background-color: var(--bg-surface-soft);
+  border-color: var(--border-color);
+  color: var(--text-main);
+}
+
+[data-theme="dark"] .form-control-custom:focus,
+[data-theme="dark"] .form-select-custom:focus,
+[data-theme="dark"] .search-input-field:focus,
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus {
+  background-color: var(--bg-surface);
+  border-color: var(--color-primary);
+  color: var(--text-main);
+}
+
+/* Tables & Data */
+[data-theme="dark"] .table-wellness,
+[data-theme="dark"] .table,
+[data-theme="dark"] .pricing-table {
+  color: var(--text-main);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .table-wellness th,
+[data-theme="dark"] .table th,
+[data-theme="dark"] .pricing-table th {
+  background-color: var(--bg-surface-soft);
+  color: var(--text-secondary);
+  border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .table-wellness td,
+[data-theme="dark"] .table td,
+[data-theme="dark"] .pricing-table td {
+  border-bottom-color: var(--border-color-light);
+}
+
+[data-theme="dark"] .table-hover tbody tr:hover,
+[data-theme="dark"] .pricing-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+[data-theme="dark"] .therapist-card-footer {
+  background-color: var(--bg-surface-soft);
+  border-top-color: var(--border-color);
+}
+
+[data-theme="dark"] .studio-map-visual {
+  background: linear-gradient(135deg, #1E251F 0%, #242E26 100%);
+}
+
+[data-theme="dark"] .studio-map-overlay-card {
+  background: rgba(30, 37, 31, 0.94);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .pricing-service-title a {
+  color: var(--color-sage);
+}
+[data-theme="dark"] .pricing-service-title a:hover {
+  color: #cde0d5;
+}
+
+[data-theme="dark"] .duration-badge-group {
+  background-color: var(--bg-surface-soft);
+  border-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .price-chip {
+  background-color: var(--bg-surface-soft);
+  border-color: var(--border-color);
+  color: var(--text-main);
+}
+[data-theme="dark"] .price-chip strong {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .price-chip.popular {
+  background-color: rgba(49, 91, 67, 0.35);
+  border-color: var(--color-sage);
+  color: #cde0d5;
+}
+[data-theme="dark"] .price-chip.popular strong {
+  color: #ffffff;
+}
+
+/* Buttons */
+[data-theme="dark"] .btn-secondary-custom {
+  background-color: var(--bg-surface-soft);
+  border-color: var(--border-color);
+  color: var(--text-main) !important;
+}
+
+[data-theme="dark"] .btn-secondary-custom:hover {
+  background-color: var(--border-color);
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .btn-outline-custom {
+  border-color: var(--border-color);
+  color: var(--text-main);
+}
+
+[data-theme="dark"] .btn-outline-custom:hover {
+  background-color: var(--bg-surface-soft);
+  border-color: var(--color-primary);
+}
+
+/* Badges & Chips */
+[data-theme="dark"] .badge-wellness {
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .duration-chip {
+  background-color: var(--bg-surface-soft);
+  border-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .hours-table td {
+  border-bottom-color: var(--border-color);
+}
+
+/* Dropdown items */
+[data-theme="dark"] .dropdown-item-custom {
+  color: var(--text-main);
+}
+
+[data-theme="dark"] .dropdown-item-custom:hover {
+  background-color: var(--bg-surface-soft);
+  color: var(--color-primary-light);
+}
+
+
+/* Navigation Active Pill & Inner Hero Distinction in Dark Mode */
+[data-theme="dark"] .nav-link-custom.active {
+  background-color: rgba(131, 148, 118, 0.2);
+  color: var(--color-primary-light);
+}
+[data-theme="dark"] .page-header-testimonials::before {
+  background: radial-gradient(
+    ellipse 85% 95% at 50% 50%,
+    rgba(22, 20, 17, 0.92) 0%,
+    rgba(20, 18, 15, 0.85) 56%,
+    rgba(16, 15, 13, 0.72) 100%
+  );
+}
+[data-theme="dark"] .hero-context-chip {
+  background: rgba(34, 41, 35, 0.88);
+  border-color: var(--border-color);
+  color: var(--text-main);
+}
+[data-theme="dark"] .experience-proof-bar,
+[data-theme="dark"] .heritage-milestone,
+[data-theme="dark"] .modality-compare-wrap,
+[data-theme="dark"] .testimonial-card-rich {
+  background-color: var(--bg-surface);
+  border-color: var(--border-color);
+}
+[data-theme="dark"] .table-compare th {
+  background-color: var(--bg-surface-soft);
+  color: var(--text-main);
+  border-bottom-color: var(--border-color);
+}
+[data-theme="dark"] .table-compare td {
+  border-bottom-color: var(--border-color);
+}
+[data-theme="dark"] .outcome-bar-track {
+  background-color: var(--bg-surface-soft);
+}
+
+/* Gallery Page Dark Mode Enhancements */
+[data-theme="dark"] .page-header-gallery::before {
+  background: radial-gradient(
+    ellipse 86% 96% at 50% 50%,
+    rgba(18, 23, 20, 0.9) 0%,
+    rgba(16, 21, 18, 0.82) 56%,
+    rgba(12, 16, 14, 0.7) 100%
+  );
+}
+[data-theme="dark"] .gallery-space-card,
+[data-theme="dark"] .gallery-lightbox-panel,
+[data-theme="dark"] .gallery-pavilion-frame {
+  background-color: var(--bg-surface);
+  border-color: var(--border-color);
+}
+[data-theme="dark"] .gallery-space-pill {
+  background: rgba(24, 31, 27, 0.9);
+  color: #E3C78A;
+  border: 1px solid rgba(227, 199, 138, 0.25);
+}
+[data-theme="dark"] .gallery-spec-chip,
+[data-theme="dark"] .gallery-lightbox-spec-box {
+  background-color: var(--bg-surface-soft);
+  border-color: var(--border-color);
+  color: var(--text-secondary);
+}
+[data-theme="dark"] .gallery-detail-trigger {
+  color: #A3B597;
+}
+[data-theme="dark"] .gallery-detail-trigger:hover {
+  color: #DDE8E1;
+}

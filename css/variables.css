@@ -1,0 +1,187 @@
+/**
+ * SOLE HARMONY - Design System Variables
+ * Official Sole Harmony Brand Palette:
+ * - Forest Green: #315B43
+ * - Deep Green: #203D2C
+ * - Sage Green: #879B7A
+ * - Terracotta: #C47A45
+ * - Warm Ivory: #FAF9F5
+ * - Champagne Gold: #C9AD70
+ * - Soft White: #FFFFFF
+ * - Dark Background: #171B17
+ */
+
+:root {
+  /* Core Brand Tokens */
+  --color-forest-green: #315B43;
+  --color-deep-green: #203D2C;
+  --color-sage-green: #879B7A;
+  --color-terracotta: #C47A45;
+  --color-terracotta-hover: #B06935;
+  --color-terracotta-soft: #F9EFE7;
+  --color-warm-ivory: #FAF9F5;
+  --color-champagne-gold: #C9AD70;
+  --color-natural-walnut: #8A684B;
+  --color-forest-charcoal: #203D2C;
+  --color-soft-white: #FFFFFF;
+  --color-muted-beige: #E2DBD0;
+  --color-dark-bg: #141C16;
+
+  /* Brand Primary: Forest Green (#315B43) */
+  --primary-rgb: 49, 91, 67;
+  --color-primary: #315B43;
+  --color-primary-hover: #203D2C;
+  --color-primary-dark: #203D2C;
+  --color-primary-light: #879B7A;
+  --color-primary-soft: #EAF0EC;
+  --color-primary-softest: #F3F7F4;
+
+  /* Earth & Accent Tones */
+  --color-walnut: #8A684B;
+  --color-walnut-hover: #75563D;
+  --color-walnut-soft: #F6F1EC;
+  --color-sand: #E2DBD0;
+  --color-sand-light: #FAF9F5;
+  --color-sand-dark: #C9BBA5;
+  --color-cream: #FAF9F5;
+  --color-ivory: #FAF9F5;
+
+  /* Forest Charcoal & Deep Neutrals */
+  --color-earth-dark: #203D2C;
+  --color-earth-brown: #3E332A;
+  --color-earth-muted: #646E65;
+  --color-earth-light: #949E95;
+
+  /* Warm Wellness Accents */
+  --color-gold: #C9AD70;
+  --color-gold-soft: #F8F4EB;
+
+  /* Surfaces & Backgrounds - Light Mode */
+  --bg-body: #FAF9F5;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #FFFFFF;
+  --bg-surface-soft: #F2EFE7;
+  --bg-surface-accent: #EAF0EC;
+  --border-color: #E2DBD0;
+  --border-color-light: #EBE4D8;
+  --border-color-dark: #C9BBA5;
+
+  /* Typography Colors */
+  --text-main: #252A24;
+  --text-secondary: #484E46;
+  --text-muted: #6E726B;
+  --text-inverse: #FFFFFF;
+  --text-accent: #65745A;
+
+  /* Semantic Feedback Colors */
+  --color-success: #4C7550;
+  --color-success-bg: #EDF5EE;
+  --color-warning: #B37D28;
+  --color-warning-bg: #FCF6EA;
+  --color-danger: #B54A4A;
+  --color-danger-bg: #FAEEEE;
+  --color-info: #486E7E;
+  --color-info-bg: #EDF4F7;
+
+  /* Typography Families */
+  --font-heading: 'Playfair Display', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-arabic: 'Cairo', 'Tajawal', 'Segoe UI', Tahoma, Arial, sans-serif;
+  --font-accent: 'Cormorant Garamond', Georgia, serif;
+
+  /* Shadows (Natural, Restrained & Soft) */
+  --shadow-xs: 0 1px 3px rgba(37, 42, 36, 0.05);
+  --shadow-sm: 0 3px 8px rgba(37, 42, 36, 0.07);
+  --shadow-md: 0 8px 24px rgba(37, 42, 36, 0.09);
+  --shadow-lg: 0 16px 40px rgba(37, 42, 36, 0.11);
+  --shadow-xl: 0 24px 60px rgba(37, 42, 36, 0.14);
+  --shadow-inner: inset 0 2px 4px rgba(37, 42, 36, 0.04);
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Layout Spacing */
+  --container-max-width: 1240px;
+  --header-height: 84px;
+  --header-height-mobile: 72px;
+
+  /* Smooth Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Dark Mode Tokens (#171B17 base) */
+:root[data-theme="dark"],
+html[data-theme="dark"] {
+  --primary-rgb: 131, 148, 118;
+  --color-primary: #839476;
+  --color-primary-hover: #98A98C;
+  --color-primary-dark: #1E251D;
+  --color-primary-light: #A5B699;
+  --color-primary-soft: #232C23;
+  --color-primary-softest: #1B221B;
+
+  --color-walnut: #A68363;
+  --color-walnut-hover: #B89676;
+  --color-walnut-soft: #26211C;
+  --color-sand: #2C2F2B;
+  --color-sand-light: #20241F;
+  --color-sand-dark: #373C35;
+  --color-cream: #1A1E19;
+  --color-ivory: #171B17;
+
+  --color-earth-dark: #F4EFE5;
+  --color-earth-brown: #DED2BF;
+  --color-earth-muted: #9BA097;
+  --color-earth-light: #73786F;
+
+  --color-terracotta: #B88E5A;
+  --color-terracotta-soft: #28211B;
+  --color-gold: #C5A059;
+  --color-gold-soft: #2B261D;
+
+  /* Dark Theme Surfaces */
+  --bg-body: #171B17;
+  --bg-surface: #222721;
+  --bg-surface-elevated: #2A3029;
+  --bg-surface-soft: #1B201B;
+  --bg-surface-accent: #232C23;
+  --border-color: #353D34;
+  --border-color-light: #2A3229;
+  --border-color-dark: #434D41;
+
+  --text-main: #F4EFE5;
+  --text-secondary: #DED2BF;
+  --text-muted: #9BA097;
+  --text-inverse: #171B17;
+  --text-accent: #98A98C;
+
+  --color-success-bg: #1B291D;
+  --color-warning-bg: #2B2519;
+  --color-danger-bg: #2E1B1B;
+  --color-info-bg: #1A252B;
+
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 3px 8px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.65);
+  --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.75);
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

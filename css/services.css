@@ -1,0 +1,339 @@
+/**
+ * Reflexology & Foot Massage Studio - Services & Service Details Styles
+ */
+
+/* ==========================================================================
+   Services Catalog & Filtering
+   ========================================================================== */
+.services-filter-bar {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 1.25rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+@media (min-width: 1120px) {
+  .services-filter-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+}
+
+.search-input-group {
+  position: relative;
+  min-width: 260px;
+  flex-shrink: 0;
+}
+.search-icon-inside {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+  width: 18px;
+  height: 18px;
+}
+.search-input-field {
+  width: 100%;
+  padding: 0.7rem 1rem 0.7rem 2.6rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  font-size: 0.9375rem;
+  transition: all var(--transition-fast);
+}
+.search-input-field:focus {
+  border-color: var(--color-primary);
+  background-color: var(--bg-surface);
+  box-shadow: 0 0 0 3px rgba(74, 107, 93, 0.15);
+}
+
+.category-pills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+}
+.category-pills-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.category-pill-btn {
+  padding: 0.5rem 1.15rem;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-body);
+  color: var(--text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+.category-pill-btn:hover,
+.category-pill-btn.active {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Service Details Page
+   ========================================================================== */
+.service-details-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+@media (min-width: 992px) {
+  .service-details-layout {
+    grid-template-columns: 1.8fr 1.2fr;
+  }
+}
+
+.service-main-image-wrap {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2.5rem;
+  aspect-ratio: 16 / 9;
+}
+.service-main-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Treatment Journey Steps */
+.treatment-steps-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+  border-left: 2px dashed var(--border-color-dark);
+}
+.treatment-step-item {
+  position: relative;
+}
+.treatment-step-dot {
+  position: absolute;
+  left: -2.05rem;
+  top: 0.25rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 3px solid var(--bg-body);
+}
+
+/* Sticky Booking Card */
+.sticky-booking-sidebar {
+  position: sticky;
+  top: calc(var(--header-height) + 2rem);
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.duration-selector-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin: 1.25rem 0;
+}
+.duration-radio-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  background: var(--bg-body);
+  transition: all var(--transition-fast);
+}
+.duration-radio-option:hover,
+.duration-radio-option.selected {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+}
+.duration-radio-option input[type="radio"] {
+  accent-color: var(--color-primary);
+}
+
+/* Contraindications Box */
+.alert-contraindications {
+  background-color: var(--color-warning-bg);
+  border-left: 4px solid var(--color-warning);
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-md);
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* ==========================================================================
+   Treatment Details Hero Banner (Sole Harmony Redesign)
+   ========================================================================== */
+.page-header-banner.page-header-service-details {
+  min-height: clamp(440px, 50vh, 520px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0 4rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Centered warm ivory radial scrim for crisp typography contrast */
+.page-header-banner.page-header-service-details::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 78% 92% at 50% 50%,
+    rgba(250, 249, 245, 0.94) 0%,
+    rgba(250, 249, 245, 0.86) 52%,
+    rgba(250, 249, 245, 0.62) 100%
+  ) !important;
+  z-index: 1;
+  pointer-events: none;
+  transition: background var(--transition-normal);
+}
+
+[data-theme="dark"] .page-header-banner.page-header-service-details::before {
+  background: radial-gradient(
+    ellipse 78% 92% at 50% 50%,
+    rgba(20, 28, 22, 0.92) 0%,
+    rgba(20, 28, 22, 0.84) 54%,
+    rgba(20, 28, 22, 0.62) 100%
+  ) !important;
+}
+
+/* Service Details Hero Banner Layout */
+.service-details-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.service-details-hero-spacer {
+  display: none;
+}
+
+.service-details-hero-content {
+  width: 100%;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.service-details-hero-content .breadcrumb-wellness {
+  justify-content: center;
+  margin-bottom: 1.15rem;
+}
+
+.service-details-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1.15rem;
+  border-radius: var(--radius-full);
+  background: rgba(135, 155, 122, 0.24);
+  color: var(--color-primary, #315B43);
+  border: 1px solid rgba(49, 91, 67, 0.18);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  backdrop-filter: blur(4px);
+}
+
+[data-theme="dark"] .service-details-hero-badge {
+  background: rgba(135, 155, 122, 0.18);
+  color: #A3C9A8;
+  border-color: rgba(163, 201, 168, 0.25);
+}
+
+.service-details-hero-heading {
+  font-family: var(--font-heading, 'Cormorant Garamond', Georgia, serif);
+  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.18;
+  color: var(--color-deep-green, #203D2C);
+  margin-bottom: 1rem;
+}
+
+[data-theme="dark"] .service-details-hero-heading {
+  color: var(--color-sand, #F7F4EE);
+}
+
+.service-details-hero-desc {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+  line-height: 1.7;
+  color: var(--color-text-secondary, #4A5568);
+  margin: 0 auto;
+  max-width: 640px;
+  text-align: center;
+}
+
+[data-theme="dark"] .service-details-hero-desc {
+  color: #C5CEBE;
+}
+
+
+@media (max-width: 991px) {
+  .page-header-banner.page-header-service-details {
+    min-height: 420px;
+    padding: 5rem 0 3.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header-banner.page-header-service-details {
+    min-height: 380px;
+    padding: 4.5rem 0 3rem;
+    background-position: center center;
+  }
+  .page-header-banner.page-header-service-details::before {
+    background: linear-gradient(
+      180deg,
+      rgba(250, 249, 245, 0.96) 0%,
+      rgba(250, 249, 245, 0.92) 55%,
+      rgba(250, 249, 245, 0.82) 100%
+    ) !important;
+  }
+  [data-theme="dark"] .page-header-banner.page-header-service-details::before {
+    background: linear-gradient(
+      180deg,
+      rgba(18, 22, 20, 0.96) 0%,
+      rgba(18, 22, 20, 0.92) 55%,
+      rgba(18, 22, 20, 0.84) 100%
+    ) !important;
+  }
+}

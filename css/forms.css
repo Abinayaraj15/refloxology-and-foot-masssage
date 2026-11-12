@@ -1,0 +1,91 @@
+/**
+ * Reflexology & Foot Massage Studio - Forms & Inputs Styles
+ */
+
+/* ==========================================================================
+   Form Controls
+   ========================================================================== */
+.form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.form-label-custom {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.form-label-custom .required-star {
+  color: var(--color-danger);
+  margin-left: 2px;
+}
+
+.form-control-custom,
+.form-select-custom {
+  width: 100%;
+  padding: 0.85rem 1.15rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-main);
+  background-color: var(--bg-body);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.form-control-custom:focus,
+.form-select-custom:focus {
+  background-color: var(--bg-surface);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(74, 107, 93, 0.15);
+}
+
+textarea.form-control-custom {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Validation States */
+.form-control-custom.is-invalid,
+.form-select-custom.is-invalid {
+  border-color: var(--color-danger) !important;
+  background-color: var(--color-danger-bg);
+}
+.invalid-feedback {
+  display: none;
+  font-size: 0.8125rem;
+  color: var(--color-danger);
+  margin-top: 0.35rem;
+}
+.form-control-custom.is-invalid ~ .invalid-feedback,
+.form-select-custom.is-invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.form-hint {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+}
+
+/* Custom Checkbox and Radio */
+.custom-checkbox-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  cursor: pointer;
+  user-select: none;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.custom-checkbox-wrap input[type="checkbox"] {
+  accent-color: var(--color-primary);
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  cursor: pointer;
+}

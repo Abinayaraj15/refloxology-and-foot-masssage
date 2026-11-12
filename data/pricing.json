@@ -1,0 +1,132 @@
+{
+  "currency": "$",
+  "currencyCode": "USD",
+  "services": [
+    {
+      "category": "Foot Reflexology & Care",
+      "items": [
+        {
+          "name": "Traditional Foot Reflexology",
+          "serviceId": "traditional-foot-reflexology",
+          "durations": [
+            { "time": "30 Min", "price": 45 },
+            { "time": "45 Min", "price": 60 },
+            { "time": "60 Min", "price": 75, "popular": true },
+            { "time": "90 Min", "price": 105 }
+          ],
+          "description": "Herbal salt soak, reflex meridian analysis, precision thumb walking, warm towel wrap."
+        },
+        {
+          "name": "Relaxing Foot Massage",
+          "serviceId": "relaxing-foot-massage",
+          "durations": [
+            { "time": "30 Min", "price": 40 },
+            { "time": "45 Min", "price": 52 },
+            { "time": "60 Min", "price": 68, "popular": true },
+            { "time": "90 Min", "price": 95 }
+          ],
+          "description": "Bamboo foot scrub, heated sweet almond oil, rhythmic calf & sole kneading."
+        }
+      ]
+    },
+    {
+      "category": "Body Reflexology & Massage",
+      "items": [
+        {
+          "name": "Full-Body Reflexology",
+          "serviceId": "full-body-reflexology",
+          "durations": [
+            { "time": "45 Min", "price": 65 },
+            { "time": "60 Min", "price": 85, "popular": true },
+            { "time": "90 Min", "price": 115 }
+          ],
+          "description": "Upper back, shoulder blade, cervical spine, palms, and sole meridian therapy."
+        },
+        {
+          "name": "Head, Neck & Shoulder Massage",
+          "serviceId": "head-neck-shoulder-massage",
+          "durations": [
+            { "time": "30 Min", "price": 42 },
+            { "time": "45 Min", "price": 58, "popular": true },
+            { "time": "60 Min", "price": 75 }
+          ],
+          "description": "Targeted relief for upper-body tension, computer posture strain, and occipital headaches."
+        },
+        {
+          "name": "Relaxation Massage",
+          "serviceId": "relaxation-massage",
+          "durations": [
+            { "time": "60 Min", "price": 85 },
+            { "time": "90 Min", "price": 120, "popular": true },
+            { "time": "120 Min", "price": 155 }
+          ],
+          "description": "Head-to-toe Swedish gliding strokes, warm organic jojoba oil, gentle stretching."
+        }
+      ]
+    },
+    {
+      "category": "Custom & Combined Sanctuary Sessions",
+      "items": [
+        {
+          "name": "Custom Wellness Session",
+          "serviceId": "custom-wellness-session",
+          "durations": [
+            { "time": "60 Min", "price": 90 },
+            { "time": "90 Min", "price": 125, "popular": true },
+            { "time": "120 Min", "price": 160 }
+          ],
+          "description": "Bespoke diagnostic intake with tailored blend of foot reflexology and deep muscular release."
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "id": "package-3-session-reset",
+      "name": "3-Session Restorative Reset",
+      "badge": "Entry Series",
+      "price": 200,
+      "originalPrice": 225,
+      "description": "Recommended for individuals experiencing acute fatigue or recovering from travel.",
+      "features": [
+        "Three 60-Minute Traditional Reflexology or Massage sessions",
+        "Complimentary floral foot soak with every appointment",
+        "Flexible scheduling valid for 6 months",
+        "Transferable to family or partners"
+      ]
+    },
+    {
+      "id": "package-5-session-journey",
+      "name": "5-Session Meridian Journey",
+      "badge": "Most Popular",
+      "popular": true,
+      "price": 320,
+      "originalPrice": 375,
+      "description": "Ideal for ongoing stress regulation, desk workers, and long-term sleep wellness.",
+      "features": [
+        "Five 60-Minute Traditional Reflexology or Massage sessions",
+        "Complimentary choice of basalt stone or botanical scrub add-on",
+        "Priority weekend and evening slot access",
+        "Valid for 12 months with flexible cancellation"
+      ]
+    },
+    {
+      "id": "package-10-session-holistic",
+      "name": "10-Session Holistic Care",
+      "badge": "Best Value",
+      "price": 600,
+      "originalPrice": 750,
+      "description": "Our most complete holistic investment for monthly restorative equilibrium.",
+      "features": [
+        "Ten 60-Minute sessions across any service in our catalog",
+        "Personalized pressure and therapist preference profile locked in",
+        "Complimentary organic herbal tea flight to take home",
+        "Valid for 18 months, zero penalty rescheduling"
+      ]
+    }
+  ],
+  "policies": {
+    "cancellation": "Cancellations or rescheduling require at least 24 hours advance notice. Cancellations under 24 hours may incur a 50% session fee.",
+    "deposit": "Zero advance deposit required. We accept all major cards, Apple Pay, and cash at studio check-out."
+  }
+}
