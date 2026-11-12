@@ -84,7 +84,7 @@ const FALLBACK_SERVICES = [
     reviewsCount: 210,
     shortDescription: "Comprehensive acupressure across spine, neck, shoulders, and plantar meridians to dissolve deep muscular tension.",
     fullDescription: "Full-body reflexology views the human body as an integrated network of energy channels. In this treatment, certified practitioners apply precise thumb pressure and palm kneading along the Bladder meridian of the back, the Gallbladder points along the neck and shoulders, and key reflex points on the palms, feet, and skull.",
-    image: "assets/images/body-massage/full-body-reflexology.jpg",
+    image: "assets/images/body-massage/full-body-meridian-therapy.jpg",
     heroImage: "assets/images/hero/about-hero-spa.jpg",
     durations: [
       { minutes: 45, price: 65, label: "Targeted Upper Body (45m)" },
@@ -118,7 +118,7 @@ const FALLBACK_SERVICES = [
     reviewsCount: 178,
     shortDescription: "Focused relief for upper-body strain, cervical compression, and tension headaches caused by modern desk work.",
     fullDescription: "A concentrated therapeutic session addressing the primary pain points of the modern lifestyle: the occipital ridge, levator scapulae, upper trapezius, and deltoids. Heated botanical compresses soften hardened myofascial tissue before deep finger and thumb pressure releases stubborn trigger points.",
-    image: "assets/images/body-massage/neck-shoulder.jpg",
+    image: "assets/images/body-massage/cervical-shoulder-relief.jpg",
     heroImage: "assets/images/hero/home-2-hero-spa.jpg",
     durations: [
       { minutes: 30, price: 42, label: "Quick Express Release (30m)" },
@@ -152,7 +152,7 @@ const FALLBACK_SERVICES = [
     reviewsCount: 310,
     shortDescription: "A restorative head-to-toe session integrating long flowing strokes, warm towels, and balancing botanical aromas.",
     fullDescription: "Surrender to an uninterrupted wellness sanctuary. This treatment combines gentle Swedish gliding strokes, passive stretching, and warm organic jojoba oil infused with your choice of bergamot, ylang-ylang, or cypress. Every muscle group from your neck, back, legs, down to your feet receives mindful, rhythmic attention in our private, temperature-controlled suites.",
-    image: "assets/images/foot-massage/hot-stone-feet.jpg",
+    image: "assets/images/body-massage/restorative-hot-stone-ritual.jpg",
     heroImage: "assets/images/experience/spa-treatment-room.jpg",
     durations: [
       { minutes: 60, price: 85, label: "Essential Harmony (60m)" },
@@ -186,7 +186,7 @@ const FALLBACK_SERVICES = [
     reviewsCount: 265,
     shortDescription: "A tailored consultation and treatment combining foot zone reflexology with focused muscular release.",
     fullDescription: "Our most adaptable and bespoke therapy. Your session begins with a personalized diagnostic consultation where your therapist examines tension patterns, posture habits, and stress points. We then custom-blend the ideal duration ratio between traditional foot reflexology, heated basalt stones, and upper body meridian acupressure.",
-    image: "assets/images/gallery/gallery-2.jpg",
+    image: "assets/images/services/custom-consultation-ritual.jpg",
     heroImage: "assets/images/hero/booking-hero.jpg",
     durations: [
       { minutes: 60, price: 90, label: "Custom Focus (60m)" },

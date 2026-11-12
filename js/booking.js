@@ -48,7 +48,7 @@ const DEFAULT_SERVICES = [
     rating: 4.92,
     reviewsCount: 210,
     shortDescription: "Comprehensive acupressure across spine, neck, shoulders, and plantar meridians to dissolve deep muscular tension.",
-    image: "assets/images/body-massage/full-body-reflexology.jpg",
+    image: "assets/images/body-massage/full-body-meridian-therapy.jpg",
     durations: [
       { minutes: 45, price: 65, label: "Targeted Upper Body (45m)" },
       { minutes: 60, price: 85, label: "Full Spinal Meridian (60m)", popular: true },
@@ -64,7 +64,7 @@ const DEFAULT_SERVICES = [
     rating: 4.89,
     reviewsCount: 178,
     shortDescription: "Focused relief for upper-body strain, cervical compression, and tension headaches caused by modern desk work.",
-    image: "assets/images/body-massage/neck-shoulder.jpg",
+    image: "assets/images/body-massage/cervical-shoulder-relief.jpg",
     durations: [
       { minutes: 30, price: 42, label: "Quick Express Release (30m)" },
       { minutes: 45, price: 58, label: "Standard Realignment (45m)", popular: true },
@@ -80,7 +80,7 @@ const DEFAULT_SERVICES = [
     rating: 4.96,
     reviewsCount: 310,
     shortDescription: "A restorative head-to-toe session integrating long flowing strokes, warm towels, and balancing botanical aromas.",
-    image: "assets/images/foot-massage/hot-stone-feet.jpg",
+    image: "assets/images/body-massage/restorative-hot-stone-ritual.jpg",
     durations: [
       { minutes: 60, price: 85, label: "Essential Harmony (60m)" },
       { minutes: 90, price: 120, label: "Full Sanctuary (90m)", popular: true },
@@ -96,7 +96,7 @@ const DEFAULT_SERVICES = [
     rating: 4.98,
     reviewsCount: 265,
     shortDescription: "A tailored consultation and treatment combining foot zone reflexology with focused muscular release.",
-    image: "assets/images/gallery/gallery-2.jpg",
+    image: "assets/images/services/custom-consultation-ritual.jpg",
     durations: [
       { minutes: 60, price: 90, label: "Custom Focus (60m)" },
       { minutes: 90, price: 125, label: "Comprehensive Bespoke (90m)", popular: true },
